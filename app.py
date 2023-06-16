@@ -7,7 +7,7 @@ import streamlit as st # streamlit 기능묶음(패키지) -> import 불러오�
 from widget.food_list import get_food_list
 from widget.food_detail import get_food_detail
 
-st.title("신대방삼거리 3대맛집")
+st.title("스팀 게임 추천")
 # streamlit run app.py
 # -> 프로젝트 생성 -> 가상환경 (파이썬 관련 설치를 매번 독립적)
 # 새로운 프로젝트를 만들면 -> 새롭게 설치
@@ -23,29 +23,30 @@ st.title("신대방삼거리 3대맛집")
 def make_store(name, img, star, desc, map, link):
     return dict(name=name, img=img, star=star, desc=desc, map=map, link=link)
 store1 = make_store(
-    "모스키친", "img/s1.png", 5,
-    "**모스키친**은 신대방삼거리역에 위치한 돈까스 전문점으로,"\
-    "가성비 좋은 고급 돈까스와 빠른 서비스로 인기를 끌고 있습니다."\
-    "특히 스페셜 등심돈까스는 가브리살이 포함되어 쫄깃한 식감을 제공하며,"
+    "몬스터 헌터 월드", "img/s1.png", 5,
+    "**몬스터 헌터 월드**는 capcom에서 2018년에 출시한 헌팅 액션 게임으로,"\
+    "뛰어난 그래픽과 화려한 액션으로 큰 인기를 끌었습니다.."\
+    "특히, 살아 숨쉬는 다양한 생태계와 다양한 장비를 통한 커스터마이징과 사냥의 재미가 뛰어납니다."
     "히말라야 소금에 와사비를 얹어 먹는 것을 추천합니다.",
-    "img/m1.png",
-    "https://naver.me/5JJQDIz0",
+    "https://youtu.be/fsoxwI4Etbw",
+    "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
 )
 store2 = make_store(
-    "스미비부타동", "img/s2.png", 4,
-    "**스미비부타동**은 신대방삼거리역에 위치한 일본식 돼지고기 덮밥(부타동) 전문점으로,"\
-    "맛과 양이 풍부하여 혼밥하기 좋은 곳이며, 가격도 합리적이다",
-    "img/m2.png",
-    "https://naver.me/xfavYBSR",
+    "어쌔신 크리드 오디세이", "img/s2.png", 4,
+    "**어쌔신 크리드 오디세이**는 ubisoft에서 2018년에 출시한 오픈월드 액션 게임으로,"\
+    "펠로폰네소스 전쟁 시기의 고대 그리스를 시대의 한 용병이 되어 넓은 세계를 탐험하고, 다양한 이야기의 주인공이 되어가는 게임입니다.\
+    '고대 그리스를 그대로 옮겨 놓은듯한 풍경과 플레이어가 선택할 수 있는 3가지 전투 시스템을 통한 액션이 큰 매력인 작품입니다.'",
+    "https://youtu.be/dJNs91zv_Dk",
+    "https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/",
 )
 store3 = make_store(
-    "미분당", "img/s3.png", 3,
-    "**미분당**은 신대방삼거리에 위치한 베트남 음식점으로, 특히 쌀국수로 유명합니다."\
-    " 이곳은 베트남 전통 음식인 쌀국수를 한국인의 입맛에 맞게 재해석하였으며,"\
-    "일본풍의 분위기와 중국식 상호를 사용하여 다양한 문화와 개성을 지닌 사람들이"\
-    "즐길 수 있는 문화 공간을 제공하려는 취지를 가지고 있습니다.",
-    "img/m3.png",
-    "https://naver.me/5NdqqXJ4",
+    "다크 소울 3", "img/s3.png", 3,
+    "**다크소울 3**는 fromsoftware에서 2016년에 출시한 소울라이크 rpg 게임으로,"\
+    "멸망을 앞두고 있는 어두운 세계에서 마지막 사명을 부여받은 주인공이 되어 역경을 헤쳐나가는 내용입니다."\
+    "이 무너져가는 세계는 유저들에게 한시도 방심할 수 없는 긴장감을 제공하며"\
+    "강대한 보스들과 어둡지만 인상적인 디자인, 개성있는 등장인물들의 조화로 이 세계에 빠져들게 만드는 게임입니다.",
+    "https://youtu.be/doFPq8n1qGY",
+    "https://store.steampowered.com/app/374320/DARK_SOULS_III/?l=koreana",
 )
 stores = [store1, store2, store3]
 
