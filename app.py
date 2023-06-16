@@ -26,15 +26,14 @@ store1 = make_store(
     "몬스터 헌터 월드", "img/s1.png", 5,
     "**몬스터 헌터 월드**는 capcom에서 2018년에 출시한 헌팅 액션 게임으로,"\
     "뛰어난 그래픽과 화려한 액션으로 큰 인기를 끌었습니다.."\
-    "특히, 살아 숨쉬는 다양한 생태계와 다양한 장비를 통한 커스터마이징과 사냥의 재미가 뛰어납니다."
-    "히말라야 소금에 와사비를 얹어 먹는 것을 추천합니다.",
+    "특히, 살아 숨쉬는 다양한 생태계와 다양한 장비를 통한 커스터마이징과 사냥의 재미가 뛰어납니다.",
     "https://youtu.be/fsoxwI4Etbw",
     "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
 )
 store2 = make_store(
     "어쌔신 크리드 오디세이", "img/s2.png", 4,
     "**어쌔신 크리드 오디세이**는 ubisoft에서 2018년에 출시한 오픈월드 액션 게임으로,"\
-    "펠로폰네소스 전쟁 시기의 고대 그리스를 시대의 한 용병이 되어 넓은 세계를 탐험하고, 다양한 이야기의 주인공이 되어가는 게임입니다.\
+    "펠로폰네소스 전쟁 시기의 고대 그리스 시대의 한 용병이 되어 넓은 세계를 탐험하고, 다양한 이야기의 주인공이 되어가는 게임입니다.\
     '고대 그리스를 그대로 옮겨 놓은듯한 풍경과 플레이어가 선택할 수 있는 3가지 전투 시스템을 통한 액션이 큰 매력인 작품입니다.'",
     "https://youtu.be/dJNs91zv_Dk",
     "https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/",
@@ -48,6 +47,7 @@ store3 = make_store(
     "https://youtu.be/doFPq8n1qGY",
     "https://store.steampowered.com/app/374320/DARK_SOULS_III/?l=koreana",
 )
+
 stores = [store1, store2, store3]
 
 # 일종의 딕셔너리 (페이지가 모두 공유하는 딕셔너리)

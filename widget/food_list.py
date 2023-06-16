@@ -13,7 +13,8 @@ def get_food_list(stores):
         # ...
         store = stores[idx]  # <- 외부에서 데이터를 받아서...
         # col.header("맛집이름")
-        col.header(store["name"])
+        # col.header(store["name"])
+        col.markdown(f"""<h2 style="height:110px;">{store['name']}</h2>""", unsafe_allow_html=True)
         # col.image("https://cdn.pixabay.com/photo/2017/02/10/08/38/pasta-2054656_640.jpg")
         col.image(store["img"])
         # star_count = 5
